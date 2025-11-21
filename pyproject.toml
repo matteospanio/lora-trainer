@@ -1,0 +1,18 @@
+[project]
+name = "lora-trainer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Matteo Spanio", email = "spanio@dei.unipd.it" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "datasets>=4.4.1",
+    "huggingface-hub[cli]>=0.36.0",
+    "numpy>=2.0.2",
+    "peft>=0.17.1",
+    "torch>=2.8.0",
+    "transformers>=4.57.1",
+    "wandb>=0.23.0",
+]

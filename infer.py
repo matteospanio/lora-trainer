@@ -3,6 +3,9 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel
 from tqdm import tqdm
+from dotenv import load_dotenv
+
+load_dotenv()
 
 BASE_MODEL_NAME = os.environ.get("MODEL_NAME")
 LORA_WEIGHTS_PATH = os.environ.get("ARTIFACT_DIR")

@@ -10,6 +10,9 @@ from transformers import (
 )
 from peft import LoraConfig, get_peft_model
 import wandb
+from dotenv import load_dotenv
+
+load_dotenv()
 
 wandb.init(
     project="mistral-lora-finetuning",  # Nome del progetto
